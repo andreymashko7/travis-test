@@ -9,4 +9,4 @@ deploy:
     secure: "YOUR ENCRYPTED API KEY"
   strategy: git
   app:
-    master:
+    master: contacts-travis
