@@ -9,5 +9,7 @@ deploy:
   api_key:
     secure: "YOUR ENCRYPTED API KEY"
   strategy: git
+  github-token: $GITHUB_TOKEN
   app:
-    master: jenkins-test
+    # master: contacts-travis
+    branch: master
