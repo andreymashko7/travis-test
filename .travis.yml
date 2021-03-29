@@ -1,15 +1,14 @@
 language: node_js
 node_js:
-  - 14.6
+- 14.6
 script:
-  - npm run lint
-  - npm run test
+- npm run lint
+- npm run test
 deploy:
   provider: heroku
   api_key:
-    secure: "YOUR ENCRYPTED API KEY"
+    secure: CR0KOmoHMdK5a/Z8pjY9edcxaRyhixgIJdv/ZVCDbIyR7vGaeEWKfpMpEiQAlr/9o4SxnM2RusUNmp3pAHI+U3aM4woOSb1yghSRncFhnYxQnAnKSxcEdx9AqG4jTRfSCaVsV+Sw9UUsuZOAhweJuAJcG3Yu3qmJtD1qAtLxyq/G93thIbdbWhR9i+HdUQcDiUE6KdGiVrs2ZtiUtgLFtZAuC1MXoC42KqGcaNY7HhlSPl0i9/Uik8IMKcpa9Fc1+EW9FkrYkofvOT0Qx67RPmY7zaLOyoEkKpSlTkIYvQVNH5LZiOO8C5BFxccS8TyjhI/f5h0xVy71bPTHvvR7JgIV82n0HR1kJ+aJnlB+ZMV1FTeT+Oh39CdFgiufgsu2Ot6Dci9cXIV4CSnzSTp8b9pQnzH+EPE7HCxcZcC2cUC/DPNOcEvN89422riNKfMRpUZBlvrCLJUbCFKpTBdVocLruRVDB/2pjrVECh4ug9CNa6v+wlksXufgU5HMBKtvn/uye2i40P5QXYa8fG6vS0lZPRXo/WoqmhbeLsfQVmPTOn0w9X1kolhM5ggNAC2vTPnTpV3ewFlpOpzw5MM63KnpYfrMkr1RuWSc4f7MeVokJlOHIdge2N6hmxGEKXly0+4zAs3hxFwg8lrT89eCUdtZVa0xla0mPhMDJHy9Bb4=
   strategy: git
-  github-token: $GITHUB_TOKEN
+  github-token: "$GITHUB_TOKEN"
   app:
-    # master: contacts-travis
     branch: master
