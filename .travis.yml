@@ -1,12 +1,13 @@
 language: node_js
 node_js:
-  - 14.15.5
+  - 14.5.5
 script:
   - npm run lint
+  - npm run test
 deploy:
   provider: heroku
   api_key:
     secure: "YOUR ENCRYPTED API KEY"
   strategy: git
   app:
-    master: contacts-travis
+    master: jenkins-test
