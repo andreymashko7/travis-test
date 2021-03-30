@@ -1,13 +1,12 @@
 language: node_js
 node_js:
-  - 14.6
+- 14.6
 script:
-  - npm run lint
+- npm run lint
 deploy:
   provider: heroku
   api_key:
-    secure: CR0KOmoHMdK5a/Z8pjY9edcxaRyhixgIJdv/ZVCDbIyR7vGaeEWKfpMpEiQAlr/9o4SxnM2RusUNmp3pAHI+U3aM4woOSb1yghSRncFhnYxQnAnKSxcEdx9AqG4jTRfSCaVsV+Sw9UUsuZOAhweJuAJcG3Yu3qmJtD1qAtLxyq/G93thIbdbWhR9i+HdUQcDiUE6KdGiVrs2ZtiUtgLFtZAuC1MXoC42KqGcaNY7HhlSPl0i9/Uik8IMKcpa9Fc1+EW9FkrYkofvOT0Qx67RPmY7zaLOyoEkKpSlTkIYvQVNH5LZiOO8C5BFxccS8TyjhI/f5h0xVy71bPTHvvR7JgIV82n0HR1kJ+aJnlB+ZMV1FTeT+Oh39CdFgiufgsu2Ot6Dci9cXIV4CSnzSTp8b9pQnzH+EPE7HCxcZcC2cUC/DPNOcEvN89422riNKfMRpUZBlvrCLJUbCFKpTBdVocLruRVDB/2pjrVECh4ug9CNa6v+wlksXufgU5HMBKtvn/uye2i40P5QXYa8fG6vS0lZPRXo/WoqmhbeLsfQVmPTOn0w9X1kolhM5ggNAC2vTPnTpV3ewFlpOpzw5MM63KnpYfrMkr1RuWSc4f7MeVokJlOHIdge2N6hmxGEKXly0+4zAs3hxFwg8lrT89eCUdtZVa0xla0mPhMDJHy9Bb4=
+    secure: g8Itu3U/ks0tKmZlanmPhXGPhop/E7ypB6oTmz0OdBsMW6ElUza+79u6SLyw3qqzU0qqyTsG0lkV+/5AQQSiZNVNMo+G+dY+J9hcCFSZVBhEKXi5n1oLrZNf7n5yCoLt/Uk5+rNVIn4d4cYqvRG8pW/nHQdcoDL0MYbezeJnKtG/VDQPXt3X+lD+Ij52+f23Hp+fpDFibA0lTuqxdXroIyau8bCGG32OM2f2aCXnwRTgRVi1XcjLhTVoNVhr9nPFgcPWsnNaCGMYDPqs0rArVBoFMKa+/K05/eOqDfcwFg1LXnh4tL8m8RlkzrcJo808+cxd31tPdVn8++Ckq0tFEKxsk9VGAhN8R3o3l7mC031Jc7dLQGqY8Ca/Rlfl2knR6bZjRN5eKvFEUkFRLFc30PwhGSJWejfdx3pEPpyHUAb4R2wdmLc9Jvi1RCXGpvZ7WnxvBKAy87H+37MZZAiIktrSaa5IJlAM/QSgyc9s6vSRkgqL+MdaUGUgzuF4am7f/B1xAu2uzQ/Y5sBz/HeiqmMobNR+7xQbobdBK3kgIZEH+2VVAM2Mo8TVa0goz/PH88rZ8dbT9d5SPpXFJMVfAXmOT3NtPMkhWztIS2uzk5FHsBvL6bG+017ENMOVkA1Zm12XilFT/tQeqLOETdQomVXlHiVxEqdtCHX/28+zU4Q=
   strategy: git
   app:
     master: contacts-travis
-    # branch: master
