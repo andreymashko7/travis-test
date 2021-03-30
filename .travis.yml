@@ -10,4 +10,5 @@ deploy:
   strategy: git
   github-token: "$GITHUB_TOKEN"
   app:
-    branch: master
+    master: contacts-travis
+    # branch: master
